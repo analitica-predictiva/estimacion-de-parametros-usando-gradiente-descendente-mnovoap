@@ -59,6 +59,7 @@ def test_02():
     python3 tests.py 02
     """
     params = preguntas.pregunta_02()
+    #print(params)
     expected = np.array([0.666, -3.0, 2.032])
     assert np.allclose(params, expected, atol=1e-3)
 
